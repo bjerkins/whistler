@@ -12,7 +12,7 @@ class SlackAPI {
         const replace = message => message
             .replace(/\${friendlyName}/, (friendlyName || serviceName))
             .replace(/\${version}/, version)
-            .replace(/\${previous}/, (previous || `N/A`))
+            .replace(/\${previous}/, (previous || 'N/A'))
             .replace(/\${githubUrl}/, githubUrl);
 
         const message = {
