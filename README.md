@@ -2,7 +2,7 @@
 > Pheuuud ♪ Hey cowboy! Ya service got upgraded.
 
 `whister` is a small service that can tap into the event stream from [Rancher](https://rancher.com/)
-and will notify you when your service has finished upgraded.
+and will notify you when your service has finished upgrading.
 
 ## Features
 
@@ -13,7 +13,31 @@ and will notify you when your service has finished upgraded.
 
 ## Deploying
 
-_Todo_
+The following environment variables need to be set:
+
+| Variable      | Description                          |
+| --------------|--------------------------------------|
+| `HOST`        | The hostname/IP of Rancher server.   |
+| `ACCESS_KEY`  | Rancher environment access key*.     |
+| `SECRET_KEY`  | Rancher environment secret key*      |
+| `PROJECT_ID`  | The Rancher project (environment) ID |
+| `SLACK_TOKEN` | Slack webhook token.                 |
+_* https://rancher.com/docs/rancher/v1.6/en/api/v2-beta/api-keys/_
+
+Example:
+
+```sh
+$ docker run \
+    -e "HOST=rancher.locally" \
+    -e "ACCESS_KEY=XXX" \
+    -e "SECRET_KEY=XXX" \
+    -e "PROJECT_ID=XXX" \
+    -e "SLACK_TOKEN=XXX" \
+    -v ./message.json:/app/message.json \
+    bjerkins/whistler:latest
+```
+
+🚀 Enjoy some sweet, automated deploy notifications.
 
 ## Slack Message Customization
 
