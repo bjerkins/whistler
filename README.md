@@ -31,6 +31,7 @@ available:
 
 ### Example message
 
+Example of `message.json`:
 ```json
 {
     "channel": "#some-slack-channel",
