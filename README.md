@@ -18,7 +18,7 @@ The following environment variables need to be set:
 | Variable      | Description                          |
 | --------------|--------------------------------------|
 | `HOST`        | The hostname/IP of Rancher server.   |
-| `ACCESS_KEY`  | Rancher environment access key*.     |
+| `ACCESS_KEY`  | Rancher environment access key*      |
 | `SECRET_KEY`  | Rancher environment secret key*      |
 | `PROJECT_ID`  | The Rancher project (environment) ID |
 | `SLACK_TOKEN` | Slack webhook token.                 |
