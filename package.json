@@ -1,0 +1,20 @@
+{
+  "name": "whistler",
+  "version": "1.0.0",
+  "description": "Rancher upgrade notifier",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": {
+    "name": "Bjarki Madsen",
+    "email": "bjarkimadsen@gmail.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "debounce": "^1.1.0",
+    "request": "^2.85.0",
+    "ws": "^5.1.1"
+  }
+}
