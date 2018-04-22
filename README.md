@@ -22,6 +22,7 @@ The following environment variables need to be set:
 | `SECRET_KEY`  | Rancher environment secret key*      |
 | `PROJECT_ID`  | The Rancher project (environment) ID |
 | `SLACK_TOKEN` | Slack webhook token.                 |
+
 _* https://rancher.com/docs/rancher/v1.6/en/api/v2-beta/api-keys/_
 
 Example:
