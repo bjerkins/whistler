@@ -22,12 +22,12 @@ inside the container. This service uses a standard [Slack attachment
 message](https://api.slack.com/docs/messages/builder) where the following template variables are
 available:
 
-| Variable           | Default | Description                                                                 |
-| -------------------|---------|-----------------------------------------------------------------------------|
-| `${version}`       |         | The upgraded version of the service.                                        |
-| `${previous}`      | "N/A"   | The previous version of the upgraded service                                |
-| `${friendlyName}`  |         | Friendly name of service, provided by the metadata using the service labels |
-| `${githubUrl}`     |         | Github URL of the service. Will be used to point to the release notes.      |
+| Variable           | Label   | Description                                                           |
+| -------------------|---------|-----------------------------------------------------------------------|
+| `${version}`       | No      | The upgraded version of the service.                                  |
+| `${previous}`      | No      | The previous version of the upgraded service                          |
+| `${friendlyName}`  | Yes     | Friendly name of the service                                          |
+| `${githubUrl}`     | Yes     | Github URL of the service. Will be used to point to the release notes.|
 
 ### Example message
 
