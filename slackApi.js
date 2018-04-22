@@ -7,10 +7,6 @@ class SlackAPI {
         this.url = `https://hooks.slack.com/services/${token}`
     }
 
-    replace(message, { serviceName, version, previous, githubUrl, friendlyName }) {
-        return message
-    }
-
     postMessage({ serviceName, version, previous, githubUrl, friendlyName }) {
 
         const replace = message => message
