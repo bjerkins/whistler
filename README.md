@@ -1,5 +1,5 @@
 # whistler
-> Pheuuud ♪ Hey cowboy! Ya service got upgraded.
+> _Pheuuud_ ♪ Hey cowboy! Ya service got upgraded.
 
 `whister` is a small service that can tap into the event stream from [Rancher](https://rancher.com/)
 and will notify you when your service has finished upgrading.
