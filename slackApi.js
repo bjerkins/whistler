@@ -26,8 +26,8 @@ class SlackAPI {
                     ...field,
                     value: replace(field.value),
                 })),
+                ts: parseInt(Date.now() / 1000),
             })),
-            ts: parseInt(Date.now() / 1000),
         };
 
         request({ url: this.url, method: 'POST', json: message });
